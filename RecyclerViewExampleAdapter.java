@@ -1,4 +1,4 @@
-package com.jueggs.podcaster.ui.playlists.manage;
+package ;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -6,13 +6,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import butterknife.ButterKnife;
-import com.jueggs.podcaster.R;
 
-public class ManagePlaylistsAdapter extends RecyclerView.Adapter<ManagePlaylistsAdapter.ViewHolder>
+public class RecyclerViewExampleAdapter extends RecyclerView.Adapter<RecyclerViewExampleAdapter.ViewHolder>
 {
     private Context context;
 
-    public ManagePlaylistsAdapter(Context context)
+    public RecyclerViewExampleAdapter(Context context)
     {
         this.context = context;
     }

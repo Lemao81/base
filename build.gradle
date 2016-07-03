@@ -28,8 +28,6 @@ android {
         prod{
             applicationIdSuffix "prod"
         }
-    }
-    productFlavors{
         free{
             applicationIdSuffix "free"
         }

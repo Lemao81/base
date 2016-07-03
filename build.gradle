@@ -23,8 +23,18 @@ android {
     }
     productFlavors{
         mock{
+            applicationIdSuffix "mock"
         }
         prod{
+            applicationIdSuffix "prod"
+        }
+    }
+    productFlavors{
+        free{
+            applicationIdSuffix "free"
+        }
+        paid{
+            applicationIdSuffix "paid"
         }
     }
     variantFilter {

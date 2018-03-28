@@ -41,6 +41,7 @@ object Versions {
     const val javaxInject = "1"
     const val koin = "0.9.1"
     const val room = "1.0.0"
+    const val mockito = "2.17.2"
 }
 
 object Libs {
@@ -97,6 +98,7 @@ object Libs {
     const val koin = "org.koin:koin-android:${Versions.koin}"
     const val roomRuntime = "android.arch.persistence.room:runtime:${Versions.room}"
     const val roomCompiler = "android.arch.persistence.room:compiler:${Versions.room}"
+    const val mockitoCore = "org.mockito:mockito-core:${Versions.mockito}"
 }
 
 object Plugins {

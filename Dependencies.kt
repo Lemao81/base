@@ -98,7 +98,7 @@ object Libs {
     const val koin = "org.koin:koin-android:${Versions.koin}"
     const val roomRuntime = "android.arch.persistence.room:runtime:${Versions.room}"
     const val roomCompiler = "android.arch.persistence.room:compiler:${Versions.room}"
-    const val mockitoCore = "org.mockito:mockito-core:${Versions.mockito}"
+    const val mockito = "org.mockito:mockito-core:${Versions.mockito}"
 }
 
 object Plugins {

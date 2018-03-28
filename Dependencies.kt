@@ -41,7 +41,7 @@ object Versions {
     const val javaxInject = "1"
     const val koin = "0.9.1"
     const val room = "1.0.0"
-    const val mockito = "2.17.2"
+    const val mockito = "2.7.22"
 }
 
 object Libs {

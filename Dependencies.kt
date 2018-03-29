@@ -42,6 +42,7 @@ object Versions {
     const val koin = "0.9.1"
     const val room = "1.0.0"
     const val mockito = "2.7.22"
+    const val powermock = "1.6.5"
 }
 
 object Libs {
@@ -99,6 +100,7 @@ object Libs {
     const val roomRuntime = "android.arch.persistence.room:runtime:${Versions.room}"
     const val roomCompiler = "android.arch.persistence.room:compiler:${Versions.room}"
     const val mockito = "org.mockito:mockito-core:${Versions.mockito}"
+    const val powermock = "org.powermock:powermock:${Versions.powermock}"
 }
 
 object Plugins {

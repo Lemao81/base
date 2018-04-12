@@ -14,7 +14,7 @@ object Versions {
     const val anko = "0.10.3"
     const val gms = "11.8.0"
     const val firebase = "11.8.0"
-    const val support = "27.1.0"
+    const val support = "27.1.1"
     const val androidPlugin = "3.1.0"
     const val databindingCompiler = "3.1.0"
     const val glide = "4.5.0"

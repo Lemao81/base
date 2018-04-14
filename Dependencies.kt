@@ -115,3 +115,10 @@ object Urls {
     const val jitpack = "https://jitpack.io"
     const val maven = "https://maven.google.com/"
 }
+
+object Paths {
+    const val andutils = "C:\\Users\\Jueggs\\AndroidStudioProjects\\AndroidUtils\\andutils\\build\\outputs\\aar"
+    const val resutils = "C:\\Users\\Jueggs\\AndroidStudioProjects\\AndroidUtils\\resutils\\build\\outputs\\aar"
+    const val jutils = "C:\\Users\\Jueggs\\AndroidStudioProjects\\AndroidUtils\\jutils\\build\\libs"
+    const val firebaseutils = "C:\\Users\\Jueggs\\AndroidStudioProjects\\AndroidUtils\\firebaseutils\\build\\outputs\\aar"
+}

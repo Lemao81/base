@@ -60,6 +60,7 @@ object Libs {
     const val supportAnnotations = "com.android.support:support-annotations:${Versions.support}"
     const val exifinterface = "com.android.support:exifinterface:${Versions.support}"
     const val constraintLayout = "com.android.support.constraint:constraint-layout:${Versions.constraintLayout}"
+    const val gridLayout = "com.android.support:gridlayout-v7:${Versions.support}"
     const val databindingCompiler = "com.android.databinding:compiler:${Versions.databindingCompiler}"
     const val firebaseCore = "com.google.firebase:firebase-core:${Versions.firebase}"
     const val firebaseDatabase = "com.google.firebase:firebase-database:${Versions.firebase}"

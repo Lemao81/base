@@ -6,7 +6,7 @@ object Versions {
     const val versionName = "1.0"
 
     const val gmsPlugin = "3.1.0"
-    const val gradlePlugin = "3.1.0"
+    const val gradlePlugin = "3.1.1"
     const val fabricPlugin = "1.24.4"
 
     const val java = "1.8"

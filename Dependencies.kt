@@ -122,4 +122,5 @@ object Paths {
     const val resutils = "C:\\Users\\Jueggs\\AndroidStudioProjects\\AndroidUtils\\resutils\\build\\outputs\\aar"
     const val jutils = "C:\\Users\\Jueggs\\AndroidStudioProjects\\AndroidUtils\\jutils\\build\\libs"
     const val firebaseutils = "C:\\Users\\Jueggs\\AndroidStudioProjects\\AndroidUtils\\firebaseutils\\build\\outputs\\aar"
+    const val rangebar = "C:\\Users\\Jueggs\\AndroidStudioProjects\\CustomViews\\rangebar\\build\\outputs\\aar"
 }

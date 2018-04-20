@@ -45,7 +45,8 @@ object Versions {
 }
 
 object Libs {
-    const val kotlinStd = "org.jetbrains.kotlin:kotlin-stdlib-jre7:${Versions.kotlin}"
+    const val kotlinStd7 = "org.jetbrains.kotlin:kotlin-stdlib-jre7:${Versions.kotlin}"
+    const val kotlinStd8 = "org.jetbrains.kotlin:kotlin-stdlib-jre8:${Versions.kotlin}"
     const val kotlinReflect = "org.jetbrains.kotlin:kotlin-reflect:${Versions.kotlin}"
     const val rxJava = "io.reactivex.rxjava2:rxjava:${Versions.rxJava}"
     const val rxJavaAndroid = "io.reactivex.rxjava2:rxandroid:${Versions.rxJavaAndroid}"

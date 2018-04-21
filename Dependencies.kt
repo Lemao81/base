@@ -1,4 +1,6 @@
 object Versions {
+    const val customPlugins = "1.0-SNAPSHOT"
+    
     const val compileSdkVersion = 27
     const val minSdkVersion = 19
     const val targetSdkVersion = 27
@@ -106,6 +108,7 @@ object Libs {
 }
 
 object Plugins {
+    const val custom = "com.jueggs:gradleplugins:${Versions.customPlugins}"
     const val gradle = "com.android.tools.build:gradle:${Versions.gradlePlugin}"
     const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
     const val gms = "com.google.gms:google-services:${Versions.gmsPlugin}"
@@ -113,6 +116,7 @@ object Plugins {
 }
 
 object Urls {
+    const val mavenLocalSnapshot = "http://localhost:8080/repository/snapshots"
     const val fabric = "https://maven.fabric.io/public"
     const val jitpack = "https://jitpack.io"
     const val maven = "https://maven.google.com/"

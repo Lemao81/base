@@ -1,12 +1,11 @@
 object Versions {
-    const val customPlugins = "1.0-SNAPSHOT"
-    
     const val compileSdkVersion = 27
     const val minSdkVersion = 19
     const val targetSdkVersion = 27
     const val versionCode = 1
     const val versionName = "1.0"
 
+    const val customPlugins = "1.0"
     const val gmsPlugin = "3.1.0"
     const val gradlePlugin = "3.1.1"
     const val fabricPlugin = "1.24.4"
@@ -117,6 +116,7 @@ object Plugins {
 
 object Urls {
     const val mavenLocalSnapshot = "http://localhost:8080/repository/snapshots"
+    const val mavenLocalInternal = "http://localhost:8080/repository/internal"
     const val fabric = "https://maven.fabric.io/public"
     const val jitpack = "https://jitpack.io"
     const val maven = "https://maven.google.com/"

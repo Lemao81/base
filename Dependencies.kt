@@ -10,7 +10,8 @@ object Versions {
     const val gradlePlugin = "3.1.1"
     const val fabricPlugin = "1.24.4"
 
-    const val java = "1.8"
+    const val java7 = "1.7"
+    const val java8 = "1.8"
     const val kotlin = "1.2.30"
     const val anko = "0.10.3"
     const val gms = "11.8.0"

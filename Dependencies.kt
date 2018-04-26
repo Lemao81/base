@@ -5,7 +5,7 @@ object Versions {
     const val versionCode = 1
     const val versionName = "1.0"
 
-    const val customPlugins = "1.0"
+    const val customPlugins = "1.0.0"
     const val gmsPlugin = "3.1.0"
     const val gradlePlugin = "3.1.1"
     const val fabricPlugin = "1.24.4"
@@ -121,12 +121,4 @@ object Urls {
     const val fabric = "https://maven.fabric.io/public"
     const val jitpack = "https://jitpack.io"
     const val maven = "https://maven.google.com/"
-}
-
-object Paths {
-    const val andutils = "C:\\Users\\Jueggs\\AndroidStudioProjects\\AndroidUtils\\andutils\\build\\outputs\\aar"
-    const val resutils = "C:\\Users\\Jueggs\\AndroidStudioProjects\\AndroidUtils\\resutils\\build\\outputs\\aar"
-    const val jutils = "C:\\Users\\Jueggs\\AndroidStudioProjects\\AndroidUtils\\jutils\\build\\libs"
-    const val firebaseutils = "C:\\Users\\Jueggs\\AndroidStudioProjects\\AndroidUtils\\firebaseutils\\build\\outputs\\aar"
-    const val rangebar = "C:\\Users\\Jueggs\\AndroidStudioProjects\\CustomViews\\rangebar\\build\\outputs\\aar"
 }

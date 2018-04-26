@@ -9,6 +9,12 @@ object Versions {
     const val gmsPlugin = "3.1.0"
     const val gradlePlugin = "3.1.1"
     const val fabricPlugin = "1.24.4"
+    
+    const val andutils = "1.0.0"
+    const val jutils = "1.0.0"
+    const val firebaseutils = "1.0.0"
+    const val resutils = "1.0.0"
+    const val rangebar = "1.0.0"
 
     const val java7 = "1.7"
     const val java8 = "1.8"
@@ -47,6 +53,12 @@ object Versions {
 }
 
 object Libs {
+    const val andutils = "com.jueggs:andutils:${Versions.andutils}"
+    const val jutils = "com.jueggs:jutils:${Versions.jutils}"
+    const val firebaseutils = "com.jueggs:firebaseutils:${Versions.firebaseutils}"
+    const val resutils = "com.jueggs:resutils:${Versions.resutils}"
+    const val rangebar = "com.jueggs.customview:rangebar:${Versions.rangebar}"
+    
     const val kotlinStd7 = "org.jetbrains.kotlin:kotlin-stdlib-jre7:${Versions.kotlin}"
     const val kotlinStd8 = "org.jetbrains.kotlin:kotlin-stdlib-jre8:${Versions.kotlin}"
     const val kotlinReflect = "org.jetbrains.kotlin:kotlin-reflect:${Versions.kotlin}"

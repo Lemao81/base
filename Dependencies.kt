@@ -10,11 +10,11 @@ object Versions {
     const val gradlePlugin = "3.1.1"
     const val fabricPlugin = "1.24.4"
     
-    const val andutils = "1.0.0"
-    const val jutils = "1.0.0"
-    const val firebaseutils = "1.0.0"
-    const val resutils = "1.0.0"
-    const val rangebar = "1.0.0"
+    const val andutils = "1.0.5"
+    const val jutils = "1.0.1"
+    const val firebaseutils = "1.0.1"
+    const val resutils = "1.0.1"
+    const val rangebar = "1.0.1"
 
     const val java7 = "1.7"
     const val java8 = "1.8"
@@ -50,6 +50,7 @@ object Versions {
     const val room = "1.0.0"
     const val mockito = "2.7.22"
     const val powermock = "1.6.5"
+    const val androidKtx = "0.3"
 }
 
 object Libs {
@@ -117,6 +118,7 @@ object Libs {
     const val roomCompiler = "android.arch.persistence.room:compiler:${Versions.room}"
     const val mockito = "org.mockito:mockito-core:${Versions.mockito}"
     const val powermock = "org.powermock:powermock:${Versions.powermock}"
+    const val androidKtx = "androidx.core:core-ktx:${Versions.androidKtx}"
 }
 
 object Plugins {

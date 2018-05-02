@@ -9,6 +9,7 @@ object Versions {
     const val gmsPlugin = "3.1.0"
     const val gradlePlugin = "3.1.1"
     const val fabricPlugin = "1.24.4"
+    const val hugoPlugin = "1.2.1"
     
     const val andutils = "1.0.5"
     const val jutils = "1.0.1"
@@ -127,6 +128,7 @@ object Plugins {
     const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
     const val gms = "com.google.gms:google-services:${Versions.gmsPlugin}"
     const val fabric = "io.fabric.tools:gradle:${Versions.fabricPlugin}"
+    const val hugo = "com.jakewharton.hugo:hugo-plugin:${Versions.hugoPlugin}"
 }
 
 object Urls {

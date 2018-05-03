@@ -52,6 +52,7 @@ object Versions {
     const val mockito = "2.7.22"
     const val powermock = "1.6.5"
     const val androidKtx = "0.3"
+    const val frodo = "0.8.3"
 }
 
 object Libs {
@@ -129,6 +130,7 @@ object Plugins {
     const val gms = "com.google.gms:google-services:${Versions.gmsPlugin}"
     const val fabric = "io.fabric.tools:gradle:${Versions.fabricPlugin}"
     const val hugo = "com.jakewharton.hugo:hugo-plugin:${Versions.hugoPlugin}"
+    const val frodo = "com.fernandocejas.frodo:frodo-plugin:${Versions.frodo}"
 }
 
 object Urls {

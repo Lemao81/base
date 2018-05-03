@@ -54,6 +54,7 @@ object Versions {
     const val androidKtx = "0.3"
     const val frodo = "0.8.3"
     const val retrofit2 = "2.4.0"
+    const val buildTimeTracker = "0.11.0"
 }
 
 object Libs {
@@ -134,6 +135,7 @@ object Plugins {
     const val fabric = "io.fabric.tools:gradle:${Versions.fabricPlugin}"
     const val hugo = "com.jakewharton.hugo:hugo-plugin:${Versions.hugoPlugin}"
     const val frodo = "com.fernandocejas.frodo:frodo-plugin:${Versions.frodo}"
+    const val buildTimeTracker = "net.rdrei.android.buildtimetracker:gradle-plugin:${Versions.buildTimeTracker}"
 }
 
 object Urls {

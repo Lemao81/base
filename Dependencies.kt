@@ -53,6 +53,7 @@ object Versions {
     const val powermock = "1.6.5"
     const val androidKtx = "0.3"
     const val frodo = "0.8.3"
+    const val retrofit2 = "2.4.0"
 }
 
 object Libs {
@@ -121,6 +122,8 @@ object Libs {
     const val mockito = "org.mockito:mockito-core:${Versions.mockito}"
     const val powermock = "org.powermock:powermock:${Versions.powermock}"
     const val androidKtx = "androidx.core:core-ktx:${Versions.androidKtx}"
+    const val retrofit2 = "com.squareup.retrofit2:retrofit:${Versions.retrofit2}"
+    const val retrofit2GsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.retrofit2}"
 }
 
 object Plugins {

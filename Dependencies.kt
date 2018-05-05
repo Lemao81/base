@@ -47,7 +47,7 @@ object Versions {
     const val crashLytics = "2.7.1@aar"
     const val apacheValidator = "1.6"
     const val javaxInject = "1"
-    const val koin = "0.9.1"
+    const val koin = "0.9.2"
     const val room = "1.0.0"
     const val mockito = "2.7.22"
     const val powermock = "1.6.5"

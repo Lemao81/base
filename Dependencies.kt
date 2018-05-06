@@ -118,6 +118,8 @@ object Libs {
     const val glideCompiler = "com.github.bumptech.glide:compiler:${Versions.glide}"
     const val javaxInject = "javax.inject:javax.inject:${Versions.javaxInject}"
     const val koin = "org.koin:koin-android:${Versions.koin}"
+    const val koinAndroid = "org.koin:koin-android:${Versions.koin}"
+    const val koinAndroidArchitecture = "org.koin:koin-android-architecture:${Versions.koin}"
     const val roomRuntime = "android.arch.persistence.room:runtime:${Versions.room}"
     const val roomCompiler = "android.arch.persistence.room:compiler:${Versions.room}"
     const val mockito = "org.mockito:mockito-core:${Versions.mockito}"

@@ -11,7 +11,7 @@ object Versions {
     const val fabricPlugin = "1.24.4"
     const val hugoPlugin = "1.2.1"
     
-    const val andutils = "1.0.5"
+    const val andutils = "1.0.9"
     const val jutils = "1.0.1"
     const val firebaseutils = "1.0.1"
     const val resutils = "1.0.1"
@@ -122,6 +122,7 @@ object Libs {
     const val koinAndroidArchitecture = "org.koin:koin-android-architecture:${Versions.koin}"
     const val roomRuntime = "android.arch.persistence.room:runtime:${Versions.room}"
     const val roomCompiler = "android.arch.persistence.room:compiler:${Versions.room}"
+    const val roomRxJava = "android.arch.persistence.room:rxjava2:${Versions.room}"
     const val mockito = "org.mockito:mockito-core:${Versions.mockito}"
     const val powermock = "org.powermock:powermock:${Versions.powermock}"
     const val androidKtx = "androidx.core:core-ktx:${Versions.androidKtx}"

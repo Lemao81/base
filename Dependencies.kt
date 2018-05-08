@@ -55,6 +55,7 @@ object Versions {
     const val frodo = "0.8.3"
     const val retrofit2 = "2.4.0"
     const val buildTimeTracker = "0.11.0"
+    const val archLifecycle = "1.1.1"
 }
 
 object Libs {
@@ -123,6 +124,8 @@ object Libs {
     const val roomRuntime = "android.arch.persistence.room:runtime:${Versions.room}"
     const val roomCompiler = "android.arch.persistence.room:compiler:${Versions.room}"
     const val roomRxJava = "android.arch.persistence.room:rxjava2:${Versions.room}"
+    const val archLifecycle = "android.arch.lifecycle:extensions:${Versions.archLifecycle}"
+    const val archLifecycleCompiler = "android.arch.lifecycle:compiler:${Versions.archLifecycle}"
     const val mockito = "org.mockito:mockito-core:${Versions.mockito}"
     const val powermock = "org.powermock:powermock:${Versions.powermock}"
     const val androidKtx = "androidx.core:core-ktx:${Versions.androidKtx}"

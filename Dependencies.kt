@@ -130,6 +130,7 @@ object Libs {
     const val roomRxJava = "android.arch.persistence.room:rxjava2:${Versions.room}"
     const val archLifecycle = "android.arch.lifecycle:extensions:${Versions.archLifecycle}"
     const val archLifecycleCompiler = "android.arch.lifecycle:compiler:${Versions.archLifecycle}"
+    const val archLiveDataCore = "android.arch.lifecycle:livedata-core:${Versions.archLifecycle}"
     const val mockito = "org.mockito:mockito-core:${Versions.mockito}"
     const val powermock = "org.powermock:powermock:${Versions.powermock}"
     const val androidKtx = "androidx.core:core-ktx:${Versions.androidKtx}"

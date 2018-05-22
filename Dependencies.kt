@@ -131,6 +131,7 @@ object Libs {
     const val archLifecycleExtensions = "android.arch.lifecycle:extensions:${Versions.archLifecycle}"
     const val archLifecycleCompiler = "android.arch.lifecycle:compiler:${Versions.archLifecycle}"
     const val archLifecycleRuntime = "android.arch.lifecycle:runtime:${Versions.archLifecycle}"
+    const val archLifecycleViewModel = "android.arch.lifecycle:viewmodel:${Versions.archLifecycle}"
     const val archLiveDataCore = "android.arch.lifecycle:livedata-core:${Versions.archLifecycle}"
     const val mockito = "org.mockito:mockito-core:${Versions.mockito}"
     const val powermock = "org.powermock:powermock:${Versions.powermock}"

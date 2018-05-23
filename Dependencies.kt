@@ -11,11 +11,12 @@ object Versions {
     const val fabricPlugin = "1.24.4"
     const val hugoPlugin = "1.2.1"
     
-    const val andutils = "1.0.19"
+    const val andutils = "1.0.21"
     const val jutils = "1.0.1"
     const val firebaseutils = "1.0.1"
     const val resutils = "1.0.1"
     const val rangebar = "1.0.1"
+    const val stackoverflowtag = "1.0.0"
 
     const val java7 = "1.7"
     const val java8 = "1.8"
@@ -67,6 +68,7 @@ object Libs {
     const val firebaseutils = "com.jueggs:firebaseutils:${Versions.firebaseutils}"
     const val resutils = "com.jueggs:resutils:${Versions.resutils}"
     const val rangebar = "com.jueggs.customview:rangebar:${Versions.rangebar}"
+    const val stackoverflowtag = "com.jueggs.customview:rangebar:${Versions.stackoverflowtag}"
     
     const val kotlinStd7 = "org.jetbrains.kotlin:kotlin-stdlib-jre7:${Versions.kotlin}"
     const val kotlinStd8 = "org.jetbrains.kotlin:kotlin-stdlib-jre8:${Versions.kotlin}"

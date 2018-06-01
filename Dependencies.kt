@@ -51,7 +51,7 @@ object Versions {
     const val javaxInject = "1"
     const val koin = "0.9.2"
     const val room = "1.0.0"
-    const val mockito = "2.7.22"
+    const val mockito = "2.18.3"
     const val mockitoKotlin = "1.5.0"
     const val powermock = "1.6.5"
     const val androidKtx = "0.3"

@@ -1,0 +1,23 @@
+fun addFragment(@IdRes containerViewId: Int, fragment: Fragment, addToBackStack: Boolean = true, tag: String? = null): Int {
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.add(containerViewId, fragment, tag ?: fragment::class.simpleName)
+        if(addToBackStack)
+            transaction.addToBackStack(tag ?: fragment::class.simpleName)
+        return transaction.commit()
+    }
+
+    fun attachFragment(fragment: Fragment) = supportFragmentManager.beginTransaction().attach(fragment).commit()
+
+    fun attachOrAddFragment(@IdRes containerViewId: Int, fragment: Lazy<Fragment>, addToBackStack: Boolean = true, tag: String? = null): Int {
+        val lazyThing = lazy {  }
+        val value=lazyThing.value
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.add(containerViewId, fragment, tag ?: fragment::class.simpleName)
+        if(addToBackStack)
+            transaction.addToBackStack(tag ?: fragment::class.simpleName)
+        return transaction.commit()
+    }
+
+    fun detachFragment(fragment: Fragment) = supportFragmentManager.beginTransaction().detach(fragment).commit()
+
+    fun replaceFragment(@IdRes containerViewId: Int, fragment: Fragment, tag: String? = null) = supportFragmentManager.beginTransaction().replace(containerViewId, fragment, tag).commit()

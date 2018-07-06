@@ -20,7 +20,7 @@ object Versions {
 
     const val java7 = "1.7"
     const val java8 = "1.8"
-    const val kotlin = "1.2.30"
+    const val kotlin = "1.2.51"
     const val kotlinCoroutine = "0.21"
     const val anko = "0.10.3"
     const val gms = "11.8.0"

@@ -21,6 +21,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility = Versions.java8
+        targetCompatibility = Versions.java8
+    }
 
     flavorDimensions "main"
     productFlavors {

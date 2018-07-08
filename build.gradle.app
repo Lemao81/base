@@ -41,6 +41,7 @@ android {
 
 kotlin { experimental { coroutines "enable" } }
 androidExtensions { experimental = true }
+kapt { useBuildCache = true }
 
 dependencies {
     implementation project(":domain")

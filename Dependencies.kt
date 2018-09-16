@@ -1,10 +1,4 @@
 object Versions {
-    const val compileSdkVersion = 27
-    const val minSdkVersion = 19
-    const val targetSdkVersion = 27
-    const val versionCode = 1
-    const val versionName = "1.0"
-
     const val customPlugins = "1.0.3"
     const val gmsPlugin = "4.0.1"
     const val gradlePlugin = "3.1.1"

@@ -176,3 +176,7 @@ object Url {
     const val jitpack = "https://jitpack.io"
     const val maven = "https://maven.google.com/"
 }
+
+object Class {
+    const val androidTestRunner = "android.support.test.runner.AndroidJUnitRunner"
+}

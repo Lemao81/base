@@ -74,7 +74,7 @@ object Lib {
     const val rxJavaAndroid = "io.reactivex.rxjava2:rxandroid:${Versions.rxJavaAndroid}"
     const val rxBinding = "com.jakewharton.rxbinding2:rxbinding-kotlin:${Versions.rxBinding}"
     const val rxBindingRecyclerView = "com.jakewharton.rxbinding2:rxbinding-recyclerview-v7-kotlin:${Versions.rxBinding}"
-    const val appcompat = "com.android.support:appcompat-v7:${Versions.support}"
+    const val appcompatV7 = "com.android.support:appcompat-v7:${Versions.support}"
     const val design = "com.android.support:design:${Versions.support}"
     const val recyclerView = "com.android.support:recyclerview-v7:${Versions.support}"
     const val cardView = "com.android.support:cardview-v7:${Versions.support}"

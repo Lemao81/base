@@ -20,7 +20,6 @@ object Versions {
     const val gms = "11.8.0"
     const val firebase = "11.8.0"
     const val support = "27.1.1"
-    const val androidPlugin = "3.1.0"
     const val glide = "4.5.0"
     const val rxJava = "2.1.9"
     const val rxJavaAndroid = "2.0.1"

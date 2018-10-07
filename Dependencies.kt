@@ -1,7 +1,7 @@
 object Versions {
     const val customPlugins = "1.0.3"
     const val gmsPlugin = "4.0.1"
-    const val androidGradlePlugin = "3.2.0-rc03"
+    const val androidGradlePlugin = "3.2.0"
     const val fabricPlugin = "1.24.4"
     const val hugoPlugin = "1.2.1"
     
@@ -82,7 +82,6 @@ object Lib {
     const val exifinterface = "com.android.support:exifinterface:${Versions.support}"
     const val constraintLayout = "com.android.support.constraint:constraint-layout:${Versions.constraintLayout}"
     const val gridLayout = "com.android.support:gridlayout-v7:${Versions.support}"
-    // must equal gradle plugin version
     const val databindingCompiler = "com.android.databinding:compiler:${Versions.androidGradlePlugin}"
     const val firebaseCore = "com.google.firebase:firebase-core:${Versions.firebase}"
     const val firebaseDatabase = "com.google.firebase:firebase-database:${Versions.firebase}"

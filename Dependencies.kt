@@ -5,7 +5,7 @@ object Versions {
     const val fabricPlugin = "1.24.4"
     const val hugoPlugin = "1.2.1"
     
-    const val andutils = "1.0.35"
+    const val andutils = "1.0.36"
     const val jutils = "1.0.7"
     const val firebaseutils = "1.0.1"
     const val resutils = "1.0.3"
@@ -167,6 +167,7 @@ object PluginIds {
     const val gms = "com.google.gms.google-services"
     const val archivaUpload = "custom-archivaupload"
     const val maven = "maven"
+    const val safeargs = "androidx.navigation.safeargs"
 }
 
 object Urls {

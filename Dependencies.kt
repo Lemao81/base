@@ -1,7 +1,7 @@
 object Versions {
     const val customPlugins = "1.0.3"
     const val gmsPlugin = "4.0.1"
-    const val gradlePlugin = "3.1.1"
+    const val androidGradlePlugin = "3.2.0-rc03"
     const val fabricPlugin = "1.24.4"
     const val hugoPlugin = "1.2.1"
     
@@ -84,7 +84,7 @@ object Lib {
     const val constraintLayout = "com.android.support.constraint:constraint-layout:${Versions.constraintLayout}"
     const val gridLayout = "com.android.support:gridlayout-v7:${Versions.support}"
     // must equal gradle plugin version
-    const val databindingCompiler = "com.android.databinding:compiler:${Versions.gradlePlugin}"
+    const val databindingCompiler = "com.android.databinding:compiler:${Versions.androidGradlePlugin}"
     const val firebaseCore = "com.google.firebase:firebase-core:${Versions.firebase}"
     const val firebaseDatabase = "com.google.firebase:firebase-database:${Versions.firebase}"
     const val firebaseAuth = "com.google.firebase:firebase-auth:${Versions.firebase}"
@@ -147,7 +147,7 @@ object Lib {
 
 object Plugins {
     const val custom = "com.jueggs:gradleplugins:${Versions.customPlugins}"
-    const val gradle = "com.android.tools.build:gradle:${Versions.gradlePlugin}"
+    const val gradle = "com.android.tools.build:gradle:${Versions.androidGradlePlugin}"
     const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
     const val gms = "com.google.gms:google-services:${Versions.gmsPlugin}"
     const val fabric = "io.fabric.tools:gradle:${Versions.fabricPlugin}"

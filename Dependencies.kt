@@ -55,7 +55,7 @@ object Versions {
     const val buildTimeTracker = "0.11.0"
     const val archLifecycle = "1.1.1"
     const val okLog = "2.3.0"
-    const val archNavigation = "1.0.0-alpha02"
+    const val archNavigation = "1.0.0-alpha06"
 }
 
 object Lib {
@@ -154,6 +154,7 @@ object Plugins {
     const val hugo = "com.jakewharton.hugo:hugo-plugin:${Versions.hugoPlugin}"
     const val frodo = "com.fernandocejas.frodo:frodo-plugin:${Versions.frodo}"
     const val buildTimeTracker = "net.rdrei.android.buildtimetracker:gradle-plugin:${Versions.buildTimeTracker}"
+    const val safeargs = "android.arch.navigation:navigation-safe-args-gradle-plugin:${Versions.archNavigation}"
 }
 
 object PluginIds {

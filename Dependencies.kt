@@ -25,7 +25,7 @@ object Versions {
     const val rxJavaAndroid = "2.0.1"
     const val rxBinding = "2.1.0"
     const val mapStruct = "1.2.0.Final"
-    const val constraintLayout = "1.0.2"
+    const val constraintLayout = "1.1.3"
     const val firebaseUi = "3.2.2"
     const val mosbyMvi = "3.1.0"
     const val dagger = "2.15"

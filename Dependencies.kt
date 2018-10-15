@@ -7,7 +7,7 @@ object Versions {
     
     const val andutils = "1.0.38"
     const val jutils = "1.0.7"
-    const val firebaseutils = "1.0.1"
+    const val firebaseutils = "1.0.2"
     const val resutils = "1.0.3"
     const val rangebar = "1.0.3"
     const val stackoverflowtag = "1.0.5"

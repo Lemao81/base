@@ -1,0 +1,3 @@
+apply from: Paths.baseKapt
+
+android.dataBinding { enabled = true }

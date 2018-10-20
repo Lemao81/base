@@ -9,7 +9,7 @@ object Versions {
     // selfmade
     const val andutils = "1.0.40"
     const val jutils = "1.0.7"
-    const val firebaseutils = "1.0.2"
+    const val firebaseutils = "1.0.3"
     const val resutils = "1.0.3"
     const val rangebar = "1.0.3"
     const val stackoverflowtag = "1.0.5"
@@ -50,6 +50,7 @@ object Versions {
     const val mockito = "2.18.3"
     const val mockitoKotlin = "1.5.0"
     const val powermock = "1.6.5"
+    const val mockk = "1.8.9"
     const val androidKtx = "0.3"
     const val frodo = "0.8.3"
     const val retrofit2 = "2.4.0"
@@ -62,6 +63,7 @@ object Versions {
 }
 
 object Lib {
+    // selfmade
     const val andutils = "com.jueggs:andutils:${Versions.andutils}"
     const val jutils = "com.jueggs:jutils:${Versions.jutils}"
     const val firebaseutils = "com.jueggs:firebaseutils:${Versions.firebaseutils}"
@@ -69,6 +71,7 @@ object Lib {
     const val rangebar = "com.jueggs.customview:rangebar:${Versions.rangebar}"
     const val stackoverflowtag = "com.jueggs.customview:stackoverflowtag:${Versions.stackoverflowtag}"
     
+    // libs
     const val kotlinStd7 = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
     const val kotlinStd8 = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}"
     const val kotlinReflect = "org.jetbrains.kotlin:kotlin-reflect:${Versions.kotlin}"
@@ -137,6 +140,9 @@ object Lib {
     const val archNavigationFragment = "android.arch.navigation:navigation-fragment-ktx:${Versions.archNavigation}"
     const val archNavigationUi = "android.arch.navigation:navigation-ui-ktx:${Versions.archNavigation}"
     const val archNavigationSafeArgs = "android.arch.navigation:navigation-safe-args-gradle-plugin:${Versions.archNavigation}"
+    const val leakCanaryNoop = "com.squareup.leakcanary:leakcanary-android-no-op:${Versions.leakCanary}"
+    const val leakCanarySupport = "com.squareup.leakcanary:leakcanary-support-fragment:${Versions.leakCanary}"
+    
     // testing
     const val jUnit = "junit:junit:${Versions.jUnit}"
     const val testRunner = "com.android.support.test:runner:${Versions.supportTest}"
@@ -146,9 +152,8 @@ object Lib {
     const val mockito = "org.mockito:mockito-core:${Versions.mockito}"
     const val powermock = "org.powermock:powermock:${Versions.powermock}"
     const val mockitoKotlin = "com.nhaarman:mockito-kotlin:${Versions.mockitoKotlin}"
+    const val mockk = "io.mockk:mockk:${Versions.mockk}"
     const val leakCanary = "com.squareup.leakcanary:leakcanary-android:${Versions.leakCanary}"
-    const val leakCanaryNoop = "com.squareup.leakcanary:leakcanary-android-no-op:${Versions.leakCanary}"
-    const val leakCanarySupport = "com.squareup.leakcanary:leakcanary-support-fragment:${Versions.leakCanary}"
 }
 
 object Plugins {

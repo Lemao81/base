@@ -6,11 +6,13 @@ object Versions {
     const val fabricPlugin = "1.24.4"
     const val hugoPlugin = "1.2.1"
     
-    // selfmade
+    // utils
     const val andutils = "1.0.40"
-    const val jutils = "1.0.7"
+    const val jutils = "1.0.9"
     const val firebaseutils = "1.0.3"
     const val resutils = "1.0.3"
+    
+    // custom views
     const val rangebar = "1.0.3"
     const val stackoverflowtag = "1.0.5"
 
@@ -60,6 +62,7 @@ object Versions {
     const val okLog = "2.3.0"
     const val archNavigation = "1.0.0-alpha06"
     const val leakCanary = "1.6.2"
+    const val rxDisposer = "1.0.0-alpha.1"
 }
 
 object Lib {
@@ -81,6 +84,7 @@ object Lib {
     const val rxJavaAndroid = "io.reactivex.rxjava2:rxandroid:${Versions.rxJavaAndroid}"
     const val rxBinding = "com.jakewharton.rxbinding2:rxbinding-kotlin:${Versions.rxBinding}"
     const val rxBindingRecyclerView = "com.jakewharton.rxbinding2:rxbinding-recyclerview-v7-kotlin:${Versions.rxBinding}"
+    const val rxDisposer = "io.sellmair:disposer:${Versions.rxDisposer}"
     const val appcompatV7 = "com.android.support:appcompat-v7:${Versions.support}"
     const val design = "com.android.support:design:${Versions.support}"
     const val recyclerView = "com.android.support:recyclerview-v7:${Versions.support}"

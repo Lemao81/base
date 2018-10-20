@@ -1,17 +1,20 @@
 object Versions {
+    // plugins
     const val customPlugins = "1.0.3"
     const val gmsPlugin = "4.0.1"
     const val androidGradlePlugin = "3.2.0"
     const val fabricPlugin = "1.24.4"
     const val hugoPlugin = "1.2.1"
     
-    const val andutils = "1.0.38"
-    const val jutils = "1.0.7"
-    const val firebaseutils = "1.0.2"
-    const val resutils = "1.0.3"
-    const val rangebar = "1.0.3"
-    const val stackoverflowtag = "1.0.5"
+    // selfmade
+    const val andutils = "1.0.+"
+    const val jutils = "1.0.+"
+    const val firebaseutils = "1.0.+"
+    const val resutils = "1.0.+"
+    const val rangebar = "1.0.+"
+    const val stackoverflowtag = "1.0.+"
 
+    // libs
     const val java7 = "1.7"
     const val java8 = "1.8"
     const val kotlin = "1.2.71"
@@ -55,6 +58,7 @@ object Versions {
     const val archLifecycle = "1.1.1"
     const val okLog = "2.3.0"
     const val archNavigation = "1.0.0-alpha06"
+    const val leakCanary = "1.6.2"
 }
 
 object Lib {
@@ -142,6 +146,9 @@ object Lib {
     const val mockito = "org.mockito:mockito-core:${Versions.mockito}"
     const val powermock = "org.powermock:powermock:${Versions.powermock}"
     const val mockitoKotlin = "com.nhaarman:mockito-kotlin:${Versions.mockitoKotlin}"
+    const val leakCanary = "com.squareup.leakcanary:leakcanary-android:${Versions.leakCanary}"
+    const val leakCanaryNoop = "com.squareup.leakcanary:leakcanary-android-no-op:${Versions.leakCanary}"
+    const val leakCanarySupport = "com.squareup.leakcanary:leakcanary-support-fragment:${Versions.leakCanary}"
 }
 
 object Plugins {

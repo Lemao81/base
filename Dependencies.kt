@@ -7,12 +7,12 @@ object Versions {
     const val hugoPlugin = "1.2.1"
     
     // selfmade
-    const val andutils = "1.0.+"
-    const val jutils = "1.0.+"
-    const val firebaseutils = "1.0.+"
-    const val resutils = "1.0.+"
-    const val rangebar = "1.0.+"
-    const val stackoverflowtag = "1.0.+"
+    const val andutils = "1.0.40"
+    const val jutils = "1.0.7"
+    const val firebaseutils = "1.0.2"
+    const val resutils = "1.0.3"
+    const val rangebar = "1.0.3"
+    const val stackoverflowtag = "1.0.5"
 
     // libs
     const val java7 = "1.7"

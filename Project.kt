@@ -27,3 +27,7 @@ object Paths {
     const val baseKapt = "../base-kapt.gradle"
     const val baseDatabinding = "../base-databinding.gradle"
 }
+
+object ProjectExtension {
+    const val android = "android"
+}

@@ -2,16 +2,16 @@ object Versions {
     // plugins
     const val customPlugins = "1.0.3"
     const val gmsPlugin = "4.1.0"
-    const val androidGradlePlugin = "3.2.0"
+    const val androidGradlePlugin = "3.2.1"
     const val fabricPlugin = "1.24.4"
     const val hugoPlugin = "1.2.1"
     
     // utils
-    const val andutils = "1.0.45"
-    const val jutils = "1.0.9"
-    const val firebaseutils = "1.0.3"
-    const val resutils = "1.0.3"
-    const val andtestutils = "1.0.3"
+    const val andutils = "1.0.46"
+    const val jutils = "1.0.10"
+    const val firebaseutils = "1.0.4"
+    const val resutils = "1.0.4"
+    const val andtestutils = "1.0.4"
     
     // custom views
     const val rangebar = "1.0.3"
@@ -21,9 +21,9 @@ object Versions {
     // libs
     const val java7 = "1.7"
     const val java8 = "1.8"
-    const val kotlin = "1.3.0-rc-190"
-    const val kotlinCoroutine = "0.30.2"
-    const val anko = "0.10.3"
+    const val kotlin = "1.3.0"
+    const val kotlinCoroutine = "1.0.0"
+    const val anko = "0.10.6"
     const val gmsBase = "16.0.1"
     const val gmsLocation = "16.0.0"
     const val firebaseCore = "16.0.4"
@@ -33,7 +33,7 @@ object Versions {
     const val firebaseStorage = "16.0.3"
     const val firebaseUi = "4.2.0"
     const val support = "28.0.0"
-    const val glide = "4.5.0"
+    const val glide = "4.7.1"
     const val rxJava = "2.1.9"
     const val rxJavaAndroid = "2.0.1"
     const val rxBinding = "2.1.0"

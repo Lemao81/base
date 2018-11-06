@@ -10,13 +10,18 @@ object App {
 object Module {
 }
 
+object BuildType {
+    const val release = "release"
+    const val debug = "debug"
+}
+
 object Dimension {
     const val main = "main"
 }
 
-object BuildType {
-    const val release = "release"
-    const val debug = "debug"
+object Flavors {
+    const val dev = "dev"
+    const val prod = "prod"
 }
 
 object Paths {

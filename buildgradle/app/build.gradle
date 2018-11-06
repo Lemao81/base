@@ -1,62 +1,59 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-kapt'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+apply plugin: PluginIds.androidApplication
+apply plugin: PluginIds.kotlinAndroid
+apply from: Paths.baseKotlinAndroidExtension
 
 android {
-    compileSdkVersion Versions.compileSdkVersion
-    defaultConfig {
-        applicationId "com.jueggs."
-        minSdkVersion Versions.minSdkVersion
-        targetSdkVersion Versions.targetSdkVersion
-        versionCode Versions.versionCode
-        versionName Versions.versionName
+    compileSdkVersion App.compileSdkVersion
 
+    defaultConfig {
+        applicationId App.applicationId
+        minSdkVersion App.minSdkVersion
+        targetSdkVersion App.targetSdkVersion
+        versionCode App.versionCode
+        versionName App.versionName
+
+        javaCompileOptions { annotationProcessorOptions.includeCompileClasspath = true }
         multiDexEnabled true
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner Const.androidTestRunner
     }
+
     buildTypes {
+        debug { minifyEnabled false }
+
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    flavorDimensions Dimension.main
+    productFlavors {
+        dev {
+            dimension Dimension.main
+            applicationIdSuffix ".dev"
+            resConfigs "en", "xhdpi"
+        }
+        prod {
+            dimension Dimension.main
+            applicationIdSuffix ".prod"
+        }
+    }
+
     compileOptions {
         sourceCompatibility = Versions.java8
         targetCompatibility = Versions.java8
     }
 
-    flavorDimensions "main"
-    productFlavors {
-        dev {
-            dimension "main"
-            applicationIdSuffix ".dev"
-        }
-        prod {
-            dimension "main"
-            applicationIdSuffix ".prod"
-        }
+    dexOptions { preDexLibraries true }
+
+    if (project.hasProperty('devBuild')) {
+        splits.abi.enable = false
+        splits.density.enable = false
+        aaptOptions.cruncherEnabled = false
     }
 }
 
-kotlin { experimental { coroutines "enable" } }
-androidExtensions { experimental = true }
-kapt { useBuildCache = true }
-
 dependencies {
-    implementation project(":domain")
-    implementation project(":data")
-
-    implementation Libs.kotlinStd8
-    implementation Libs.appcompat
-    implementation Libs.constraintLayout
-    implementation Libs.koin
-
-    testImplementation Libs.jUnit
-    testImplementation Libs.mockito
-
-    androidTestImplementation Libs.testRunner
-    androidTestImplementation Libs.testRules
-    androidTestImplementation Libs.espressoCore
-    androidTestImplementation Libs.mockito
+    implementation Lib.kotlinStd8
+    implementation Lib.appcompatV7
 }

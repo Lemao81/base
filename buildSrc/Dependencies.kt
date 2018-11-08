@@ -1,17 +1,17 @@
 object Versions {
     // plugins
-    const val customPlugins = "1.0.3"
+    const val customPlugins = "1.0.4"
     const val gmsPlugin = "4.1.0"
     const val androidGradlePlugin = "3.2.1"
     const val fabricPlugin = "1.24.4"
     const val hugoPlugin = "1.2.1"
     
     // utils
-    const val andutils = "1.0.46"
+    const val andutils = "1.0.48"
     const val jutils = "1.0.10"
     const val firebaseutils = "1.0.4"
     const val resutils = "1.0.4"
-    const val andtestutils = "1.0.4"
+    const val andtestutils = "1.0.5"
     
     // custom views
     const val rangebar = "1.0.3"
@@ -75,6 +75,8 @@ object Versions {
     const val kakao = "1.4.0"
     const val uiAutomator = "2.1.1"
     const val multidex = "1.0.3"
+    const val permissions = "3.7"
+    const val ktlint = "0.29.0"
 }
 
 object Lib {
@@ -94,21 +96,23 @@ object Lib {
     const val kotlinReflect = "org.jetbrains.kotlin:kotlin-reflect:${Versions.kotlin}"
     const val kotlinCoroutine = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.kotlinCoroutine}"
     const val kotlinCoroutineAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.kotlinCoroutine}"
+    const val supportV4 = "com.android.support:support-v4:${Versions.support}"
+    const val supportAppcompat = "com.android.support:appcompat-v7:${Versions.support}"
+    const val supportPreferenceV7 = "com.android.support:preference-v7:${Versions.support}"
+    const val supportDesign = "com.android.support:design:${Versions.support}"
+    const val supportRecyclerView = "com.android.support:recyclerview-v7:${Versions.support}"
+    const val supportCardView = "com.android.support:cardview-v7:${Versions.support}"
+    const val supportAnnotations = "com.android.support:support-annotations:${Versions.support}"
+    const val supportExifinterface = "com.android.support:exifinterface:${Versions.support}"
+    const val supportGridLayout = "com.android.support:gridlayout-v7:${Versions.support}"
+    const val supportPalette = "com.android.support:palette-v7:${Versions.support}"
+    const val supportMultidex = "com.android.support:multidex:${Versions.multidex}"
+    const val supportConstraintLayout = "com.android.support.constraint:constraint-layout:${Versions.constraintLayout}"
     const val rxJava = "io.reactivex.rxjava2:rxjava:${Versions.rxJava}"
     const val rxJavaAndroid = "io.reactivex.rxjava2:rxandroid:${Versions.rxJavaAndroid}"
     const val rxBinding = "com.jakewharton.rxbinding2:rxbinding-kotlin:${Versions.rxBinding}"
     const val rxBindingRecyclerView = "com.jakewharton.rxbinding2:rxbinding-recyclerview-v7-kotlin:${Versions.rxBinding}"
     const val rxDisposer = "io.sellmair:disposer:${Versions.rxDisposer}"
-    const val appcompatV7 = "com.android.support:appcompat-v7:${Versions.support}"
-    const val design = "com.android.support:design:${Versions.support}"
-    const val recyclerView = "com.android.support:recyclerview-v7:${Versions.support}"
-    const val cardView = "com.android.support:cardview-v7:${Versions.support}"
-    const val supportV4 = "com.android.support:support-v4:${Versions.support}"
-    const val supportAnnotations = "com.android.support:support-annotations:${Versions.support}"
-    const val exifinterface = "com.android.support:exifinterface:${Versions.support}"
-    const val multidex = "com.android.support:multidex:${Versions.multidex}"
-    const val constraintLayout = "com.android.support.constraint:constraint-layout:${Versions.constraintLayout}"
-    const val gridLayout = "com.android.support:gridlayout-v7:${Versions.support}"
     const val databindingCompiler = "com.android.databinding:compiler:${Versions.androidGradlePlugin}"
     const val firebaseCore = "com.google.firebase:firebase-core:${Versions.firebaseCore}"
     const val firebaseDatabase = "com.google.firebase:firebase-database:${Versions.firebaseDatabase}"
@@ -165,6 +169,8 @@ object Lib {
     const val leakCanarySupport = "com.squareup.leakcanary:leakcanary-support-fragment:${Versions.leakCanary}"
     const val transitionX = "in.arunkumarsampath:transition-x:${Versions.transitionX}"
     const val khttp = "khttp:khttp:${Versions.khttp}"
+    const val permissions = "com.nabinbhandari.android:permissions:${Versions.permissions}"
+    const val ktlint = "com.github.shyiko:ktlint:${Versions.ktlint}"
     
     // testing
     const val jUnit = "junit:junit:${Versions.jUnit}"
@@ -172,13 +178,13 @@ object Lib {
     const val testRules = "com.android.support.test:rules:${Versions.supportTest}"
     const val espressoCore = "com.android.support.test.espresso:espresso-core:${Versions.espresso}"
     const val espressoIntents = "com.android.support.test.espresso:espresso-intents:${Versions.espresso}"
+    const val uiAutomator = "com.android.support.test.uiautomator:uiautomator-v18:${Versions.uiAutomator}"
     const val mockito = "org.mockito:mockito-core:${Versions.mockito}"
     const val powermock = "org.powermock:powermock:${Versions.powermock}"
     const val mockitoKotlin = "com.nhaarman:mockito-kotlin:${Versions.mockitoKotlin}"
     const val mockk = "io.mockk:mockk:${Versions.mockk}"
     const val mockkAndroid = "io.mockk:mockk-android:${Versions.mockk}"
     const val kakao = "com.agoda.kakao:kakao:${Versions.kakao}"
-    const val uiAutomator = "com.android.support.test.uiautomator:uiautomator-v18:${Versions.uiAutomator}"
 }
 
 object Plugins {

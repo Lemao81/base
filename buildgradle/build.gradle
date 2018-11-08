@@ -13,7 +13,13 @@ buildscript {
 }
 
 allprojects {
-    configureRepositories(it)
+    repositories {
+        jcenter()
+        google()
+        maven { url Urls.mavenLocalInternal }
+        maven { url Urls.maven }
+    }
+    
     disableLintTasks(it)
     ignoreRelease(it)
 }

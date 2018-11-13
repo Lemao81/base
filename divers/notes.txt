@@ -1,0 +1,88 @@
+clean -Pgroup=com.github.Lemao81 -Pversion=1.0.58 install
+
+app:dependencies
+
+android:animateLayoutChanges="true"
+
+verhindern dass erstes Inputfeld automatisch fokusiert:
+android:focusableInTouchMode="true" zu Containerlayout zufügen
+
+No Tests found:
+ - Android unit tests in src/test nicht in src/androidTest
+ - Constanten ev. nicht aufgelöst, ersetzen durch Werte
+
+
+buildSrc:
+ - buildSrc folder -> inside file 'build.gradle.kts' -> inside file
+plugins {
+    `kotlin-dsl`
+}
+ - folder src - main - java
+ - insice java Dependencies.kt
+
+
+Image as Drawable:
+  - add Image Asset -> Action Bar and Tab Icons
+
+compile fileTree(dir: 'libs', include: ['*.jar'])
+
+
+Repo in git anlegen -> git bash zu Projekt navigieren
+git init
+gitignore erstellen '.gitignore' (gradle, intellij, android etc.)
+git add .    ('git reset .'  zum rückgängig machen)
+git commit -m "init commit"
+git remote add origin https://github.com/Lemao81/GradlePlugins.git
+git remote -v
+git push -u origin master
+
+Repo von git clonen -> git bash zu Ordner navigieren, in dem der Projektordner erstellt werden soll
+git clone <repo url kopie>
+
+
+gradlew build > myLogs.txt 2> logErrors.txt
+
+
+kein Android Facet: Settings -> Plugins -> enable Android Support
+
+
+Appcompatreference nicht verfügbar -> *.iml löschen und Project neu importen
+
+
+git rm <old directory> -r
+git add <new directory>
+
+
+BindingAdapter: 
+ - Methodendefaultwerte werden ignoriert, Wert ist entweder null wenn Attribut nicht gesetzt oder in xml gesetzter Wert (für Default mit Elvis-Op arbeiten)
+ - RequireAll=false-Parameter-Datentyp muß Nullable sein (mit ?), da null ankommt wenn nicht gesetzt in xml
+ - Attributename und Methodenname müssen nicht gleich sein
+
+
+Attempt to invoke interface method 'boolean android.view.inputmethod.InputConnection.reportFullscreenMode(boolean)' on a null object reference  ->  Run configuration -> Disable advanced profiling
+
+
+BottomNavigationView + Fab -> layout_insetEdge = bottom für BottomNavigationView
+
+
+Android Studio Scopes:
+Preferences -> Appearance + Behavior -> Scopes
+Pattern: file:*.gradle||file:*.kts||file:*.properties||file[buildSrc]:src//*
+
+
+Error: transformResourcesWithMergeJavaResForDevDebugAndroidTest bzw. More than one file was found with OS independent path 'protobuf.meta'
+Lösung: in app/lib gradle file einfügen: packagingOptions {
+        				   pickFirst 'protobuf.meta'
+    				         }
+
+
+Caused by: java.lang.RuntimeException: Unable to resolve activity for: Intent { act=android.intent.action.MAIN flg=0x14000000 cmp=com.jueggs.login.test/com.jueggs.base.test.SingleFragmentActivity }
+Lösung: Testrule mit zweitem Parameter = false starten (ActivityTestRule<SingleFragmentActivity>(SingleFragmentActivity::class.java, true, false))
+
+
+Cannot resolve exifinterface, multidex, etc.  ->  bei den Repos google() vor jcenter() schieben
+
+Import Projekt mit Kotlin DSL gradle files: import mit Gradle source (nicht Android Gradle)
+
+
+RuntimeException -> byte-buddy-agent -> Mockito Version nicht höher als 2.22.0 (check jutils)

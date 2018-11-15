@@ -1,5 +1,0 @@
-task clean(type: Delete) {
-    doLast {
-        delete rootProject.buildDir
-    }
-}

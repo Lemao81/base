@@ -5,9 +5,9 @@ object Versions {
     const val androidGradlePlugin = "3.2.1"
     const val fabricPlugin = "1.24.4"
     const val hugoPlugin = "1.2.1"
-    
+
     // utils
-    const val andutils = "1.0.54"
+    const val andutils = "1.0.59"
     const val jutils = "1.0.13"
     const val firebaseutils = "1.0.5"
     const val resutils = "1.0.5"

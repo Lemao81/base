@@ -10,7 +10,7 @@ val deployProjects = listOf(
 
 tasks.create<Copy>("deployDependencies") {
     description = "Copies buildSrc/Dependencies.kt to android projects"
-    group = "Custom"
+    group = "deploy"
 
     doLast {
         val fromPath = "$projectDir\\buildSource\\$deployFileName"

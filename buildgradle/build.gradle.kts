@@ -33,5 +33,6 @@ allprojects {
 }
 
 tasks.create<Delete>("clean") {
+    group = "Cleanup"
     doLast { delete(rootProject.buildDir) }
 }

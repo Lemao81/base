@@ -7,13 +7,13 @@ object Versions {
     const val hugoPlugin = "1.2.1"
 
     // utils
-    const val andutils = "1.0.59"
-    const val jutils = "1.0.13"
+    const val andutils = "1.0.70"
+    const val jutils = "1.0.17"
     const val firebaseutils = "1.0.5"
     const val resutils = "1.0.5"
     const val andtestutils = "1.0.8"
     const val customviewutils = "1.0.1"
-    
+
     // custom views
     const val rangebar = "1.0.3"
     const val stackoverflowtag = "1.0.5"
@@ -42,7 +42,7 @@ object Versions {
     const val constraintLayout = "1.1.3"
     const val mosbyMvi = "3.1.0"
     const val dagger = "2.15"
-    const val joda = "2.9.9"
+    const val joda = "2.10.1"
     const val crystalRange = "1.1.3"
     const val imageCropper = "2.5.1"
     const val imageCompressor = "2.1.0"
@@ -78,6 +78,7 @@ object Versions {
     const val multidex = "1.0.3"
     const val permissions = "3.7"
     const val ktlint = "0.29.0"
+    const val androidxTestCore = "1.0.0"
 }
 
 object Lib {
@@ -91,7 +92,7 @@ object Lib {
     const val rangebar = "com.jueggs.customview:rangebar:${Versions.rangebar}"
     const val stackoverflowtag = "com.jueggs.customview:stackoverflowtag:${Versions.stackoverflowtag}"
     const val availableindicator = "com.jueggs.customview:availableindicator:${Versions.availableindicator}"
-    
+
     // libs
     const val kotlinStd7 = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
     const val kotlinStd8 = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}"
@@ -115,6 +116,7 @@ object Lib {
     const val rxBinding = "com.jakewharton.rxbinding2:rxbinding-kotlin:${Versions.rxBinding}"
     const val rxBindingRecyclerView = "com.jakewharton.rxbinding2:rxbinding-recyclerview-v7-kotlin:${Versions.rxBinding}"
     const val rxDisposer = "io.sellmair:disposer:${Versions.rxDisposer}"
+    const val databindingBase = "com.android.databinding:baseLibrary:${Versions.androidGradlePlugin}"
     const val databindingCompiler = "com.android.databinding:compiler:${Versions.androidGradlePlugin}"
     const val firebaseCore = "com.google.firebase:firebase-core:${Versions.firebaseCore}"
     const val firebaseDatabase = "com.google.firebase:firebase-database:${Versions.firebaseDatabase}"
@@ -174,7 +176,7 @@ object Lib {
     const val khttp = "khttp:khttp:${Versions.khttp}"
     const val permissions = "com.nabinbhandari.android:permissions:${Versions.permissions}"
     const val ktlint = "com.github.shyiko:ktlint:${Versions.ktlint}"
-    
+
     // testing
     const val jUnit = "junit:junit:${Versions.jUnit}"
     const val testRunner = "com.android.support.test:runner:${Versions.supportTest}"
@@ -188,6 +190,7 @@ object Lib {
     const val mockk = "io.mockk:mockk:${Versions.mockk}"
     const val mockkAndroid = "io.mockk:mockk-android:${Versions.mockk}"
     const val kakao = "com.agoda.kakao:kakao:${Versions.kakao}"
+    const val androidxTestCore = "androidx.test:core:${Versions.androidxTestCore}"
 }
 
 object Plugins {

@@ -57,6 +57,7 @@ BindingAdapter:
  - Methodendefaultwerte werden ignoriert, Wert ist entweder null wenn Attribut nicht gesetzt oder in xml gesetzter Wert (für Default mit Elvis-Op arbeiten)
  - RequireAll=false-Parameter-Datentyp muß Nullable sein (mit ?), da null ankommt wenn nicht gesetzt in xml
  - Attributename und Methodenname müssen nicht gleich sein
+ - damit BindingAdapter registriert wird muß dataBinding { enabled = true } und apply plugin: 'kotlin-kapt' gesetzt sein
 
 
 Attempt to invoke interface method 'boolean android.view.inputmethod.InputConnection.reportFullscreenMode(boolean)' on a null object reference  ->  Run configuration -> Disable advanced profiling
@@ -86,3 +87,9 @@ Import Projekt mit Kotlin DSL gradle files: import mit Gradle source (nicht Andr
 
 
 RuntimeException -> byte-buddy-agent -> Mockito Version nicht höher als 2.22.0 (check jutils)
+
+
+io.mockk.MockKException: Failed matching mocking signature for  ->  gemockte Klasse muß 'open' modifier haben
+
+
+Ok-Button im Softkeyboard: xml-Attribut imeOptions auf actionDone + inputType=text muß gesetzt sein

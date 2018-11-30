@@ -1,5 +1,7 @@
-apply plugin: PluginIds.androidLibrary
-apply plugin: PluginIds.kotlinAndroid
+import buildSrc.*
+
+apply plugin: PluginId.androidLibrary
+apply plugin: PluginId.kotlinAndroid
 
 kotlin { experimental { coroutines "enable" } }
 
@@ -24,8 +26,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = Versions.java8
-        targetCompatibility = Versions.java8
+        sourceCompatibility = Version.java8
+        targetCompatibility = Version.java8
     }
 
     flavorDimensions Dimension.main

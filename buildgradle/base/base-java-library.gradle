@@ -1,13 +1,15 @@
-apply plugin: PluginIds.javaLibrary
-apply plugin: PluginIds.kotlin
+import buildSrc.*
+
+apply plugin: PluginId.javaLibrary
+apply plugin: PluginId.kotlin
 
 kotlin { experimental { coroutines "enable" } }
 
-sourceCompatibility = Versions.java8
-targetCompatibility = Versions.java8
+sourceCompatibility = Version.java8
+targetCompatibility = Version.java8
 
-compileKotlin { kotlinOptions { jvmTarget = Versions.java8 } }
-compileTestKotlin { kotlinOptions { jvmTarget = Versions.java8 } }
+compileKotlin { kotlinOptions { jvmTarget = Version.java8 } }
+compileTestKotlin { kotlinOptions { jvmTarget = Version.java8 } }
 
 dependencies {
     implementation Lib.kotlinStd8

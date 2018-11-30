@@ -93,3 +93,6 @@ io.mockk.MockKException: Failed matching mocking signature for  ->  gemockte Kla
 
 
 Ok-Button im Softkeyboard: xml-Attribut imeOptions auf actionDone + inputType=text muß gesetzt sein
+
+
+Wildcard-Imports -> Editor - CodeStyle - <language> - Imports

@@ -1,13 +1,6 @@
-ext {
-    configureRepositories = { project ->
-        project.repositories {
-            jcenter()
-            google()
-            maven { url Urls.mavenLocalInternal }
-            maven { url Urls.maven }
-        }
-    }
+import buildSrc.*
 
+ext {
     disableLintTasks = { project ->
         project.tasks.whenTaskAdded { task ->
             if (task.name.startsWith("lint"))
@@ -17,10 +10,10 @@ ext {
 
     ignoreRelease = { project ->
         project.afterEvaluate {
-            def android = it.extensions.findByName("android")
+            def android = it.extensions.findByName(Extension.android)
             if (android != null) {
                 android.variantFilter { variant ->
-                    if (variant.buildType.name == 'release')
+                    if (variant.buildType.name == BuildType.release)
                         variant.setIgnore(true)
                 }
             }
@@ -29,10 +22,10 @@ ext {
 
     ignoreDevRelease = { project ->
         project.afterEvaluate {
-            def android = it.extensions.findByName(ProjectExtension.android)
+            def android = it.extensions.findByName(Extension.android)
             if (android != null) {
                 android.variantFilter { variant ->
-                    if (variant.buildType.name == BuildTypes.release && variant.getFlavors().get(0).name == Flavors.dev)
+                    if (variant.buildType.name == BuildType.release && variant.getFlavors().get(0).name == Flavor.dev)
                         variant.setIgnore(true)
                 }
             }

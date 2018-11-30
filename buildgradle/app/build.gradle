@@ -1,6 +1,14 @@
-apply plugin: PluginIds.androidApplication
-apply plugin: PluginIds.kotlinAndroid
-apply from: Paths.baseKotlinAndroidExtension
+import buildSrc.PluginId
+import buildSrc.Path
+import buildSrc.App
+import buildSrc.Const
+import buildSrc.Dimension
+import buildSrc.Version
+import buildSrc.Lib
+
+apply plugin: PluginId.androidApplication
+apply plugin: PluginId.kotlinAndroid
+apply from: Path.baseKotlinAndroidExtension
 
 android {
     compileSdkVersion App.compileSdkVersion
@@ -40,8 +48,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = Versions.java8
-        targetCompatibility = Versions.java8
+        sourceCompatibility = Version.java8
+        targetCompatibility = Version.java8
     }
 
     dexOptions { preDexLibraries true }
@@ -55,5 +63,6 @@ android {
 
 dependencies {
     implementation Lib.kotlinStd8
-    implementation Lib.appcompatV7
+    implementation Lib.supportAppcompat
+    implementation Lib.supportConstraintLayout
 }

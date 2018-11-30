@@ -1,3 +1,5 @@
-apply plugin: PluginIds.kotlinAndroidExtensions
+import buildSrc.*
+
+apply plugin: PluginId.kotlinAndroidExtensions
 
 androidExtensions { experimental = true }

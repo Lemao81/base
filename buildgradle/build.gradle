@@ -1,25 +1,27 @@
-apply from: Paths.baseProject
+import buildSrc.*
+
+apply from: Path.baseProject
 
 buildscript {
     repositories {
-        jcenter()
         google()
+        jcenter()
     }
 
     dependencies {
-        classpath Plugins.androidGradle
-        classpath Plugins.kotlin
+        classpath Plugin.androidGradle
+        classpath Plugin.kotlin
     }
 }
 
 allprojects {
     repositories {
-        jcenter()
         google()
-        maven { url Urls.mavenLocalInternal }
-        maven { url Urls.maven }
+        jcenter()
+        maven { url Url.mavenLocalInternal }
+        maven { url Url.maven }
     }
-    
+
     disableLintTasks(it)
     ignoreRelease(it)
 }

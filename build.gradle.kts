@@ -2,6 +2,7 @@ val deployProjectPath = "buildSrc\\src\\main\\java"
 val deployFileName = "Dependencies.kt"
 
 val deployProjects = listOf(
+    "base",
     "ProjectX",
     "AndroidUtils",
     "CustomViews",

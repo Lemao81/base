@@ -1,0 +1,9 @@
+import buildSrc.*
+
+android {
+    flavorDimensions Dimension.main
+    productFlavors {
+        dev { dimension Dimension.main }
+        prod { dimension Dimension.main }
+    }
+}

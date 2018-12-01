@@ -9,12 +9,12 @@ object Version {
     const val hugoPlugin = "1.2.1"
 
     // utils
-    const val andutils = "1.0.72"
+    const val andutils = "1.0.76"
     const val jutils = "1.0.19"
     const val firebaseutils = "1.0.5"
     const val resutils = "1.0.5"
     const val andtestutils = "1.0.8"
-    const val customviewutils = "1.0.1"
+    const val customviewutils = "1.0.7"
 
     // custom views
     const val rangebar = "1.0.3"
@@ -82,6 +82,7 @@ object Version {
     const val ktlint = "0.29.0"
     const val androidxTestCore = "1.0.0"
     const val autoDsl = "0.0.9"
+    const val log4k = "1.0.1"
 }
 
 object Lib {
@@ -182,6 +183,7 @@ object Lib {
     const val ktlint = "com.github.shyiko:ktlint:${Version.ktlint}"
     const val autoDsl = "com.juanchosaravia.autodsl:annotation:${Version.autoDsl}"
     const val autoDslProcessor = "com.juanchosaravia.autodsl:processor:${Version.autoDsl}"
+    const val log4kAndroid = "com.log4k:log4k-android:${Version.log4k}"
 
     // testing
     const val jUnit = "junit:junit:${Version.jUnit}"
@@ -248,10 +250,13 @@ object BuildType {
 }
 
 object Path {
-    const val baseProject = "base-project.gradle"
-    const val baseAndroidLibrary = "../base-android-library.gradle"
-    const val baseJavaLibrary = "../base-java-library.gradle"
-    const val baseKotlinAndroidExtension = "../base-kotlin-android-extension.gradle"
-    const val baseKapt = "../base-kapt.gradle"
-    const val baseDatabinding = "../base-databinding.gradle"
+    const val baseProject = "../base/gradlefiles/base/base-project.gradle"
+    const val baseAndroidLibrary = "../../base/gradlefiles/base/base-android-library.gradle"
+    const val baseJavaLibrary = "../../base/gradlefiles/base/base-java-library.gradle"
+    const val baseKotlinAndroidExtension = "../../base/gradlefiles/base/base-kotlin-android-extension.gradle"
+    const val baseKapt = "../../base/gradlefiles/base/base-kapt.gradle"
+    const val baseDatabinding = "../../base/gradlefiles/base/base-databinding.gradle"
+    const val baseFlavors = "../../base/gradlefiles/base/base-flavors.gradle"
+    const val baseArchivaUpload = "../../base/gradlefiles/base/base-archivaupload.gradle"
+    const val ktlint = "../../base/gradlefiles/ktlint.gradle"
 }

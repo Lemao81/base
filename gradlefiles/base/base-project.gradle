@@ -1,6 +1,15 @@
 import buildSrc.*
 
 ext {
+    configureBaseRepositories = { project ->
+        project.repositories {
+            google()
+            jcenter()
+            maven { url Url.mavenLocalInternal }
+            maven { url Url.maven }
+        }
+    }
+
     disableLintTasks = { project ->
         project.tasks.whenTaskAdded { task ->
             if (task.name.startsWith("lint"))
@@ -30,5 +39,12 @@ ext {
                 }
             }
         }
+    }
+}
+
+task clean(type: Delete) {
+    group 'Cleanup'
+    doLast {
+        delete rootProject.buildDir
     }
 }

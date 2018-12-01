@@ -3,8 +3,6 @@ import buildSrc.*
 apply plugin: PluginId.androidLibrary
 apply plugin: PluginId.kotlinAndroid
 
-kotlin { experimental { coroutines "enable" } }
-
 android {
     compileSdkVersion App.compileSdkVersion
 
@@ -25,15 +23,12 @@ android {
         }
     }
 
+    dexOptions { preDexLibraries true }
+    packagingOptions { pickFirst 'protobuf.meta' }
+
     compileOptions {
         sourceCompatibility = Version.java8
         targetCompatibility = Version.java8
-    }
-
-    flavorDimensions Dimension.main
-    productFlavors {
-        dev { dimension Dimension.main }
-        prod { dimension Dimension.main }
     }
 }
 

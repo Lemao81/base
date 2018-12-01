@@ -15,20 +15,11 @@ buildscript {
 }
 
 allprojects {
-    repositories {
-        google()
-        jcenter()
-        maven { url Url.mavenLocalInternal }
-        maven { url Url.maven }
-    }
-
+    configureBaseRepositories(it)
     disableLintTasks(it)
     ignoreRelease(it)
 }
 
-task clean(type: Delete) {
-    group 'Cleanup'
-    doLast {
-        delete rootProject.buildDir
-    }
+subprojects {
+    apply from: Path.ktlint
 }

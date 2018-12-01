@@ -3,8 +3,6 @@ import buildSrc.*
 apply plugin: PluginId.javaLibrary
 apply plugin: PluginId.kotlin
 
-kotlin { experimental { coroutines "enable" } }
-
 sourceCompatibility = Version.java8
 targetCompatibility = Version.java8
 

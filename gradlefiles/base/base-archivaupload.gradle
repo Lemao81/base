@@ -1,0 +1,4 @@
+import buildSrc.*
+
+archiva { groupId = App.applicationId }
+uploadArchives { repositories { mavenDeployer() } }

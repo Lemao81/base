@@ -96,3 +96,12 @@ Ok-Button im Softkeyboard: xml-Attribut imeOptions auf actionDone + inputType=te
 
 
 Wildcard-Imports -> Editor - CodeStyle - <language> - Imports
+
+
+Git remove from version control -> git rm -r --cached <path>
+
+
+MotionEvent.rawX -> absolute x-Koordinate bezogen auf das Display (Range 0 - Breite des Displays)
+MotionEvent.x -> x-Koordinate relativ zu der View, die Touchevent ausgelöst hat / Listener deklariert hat (Range von 0 = linker Rand View bis Displaybreite - View-Absolut-StartX)
+onInterceptTouchEvent -> MotionEvent.x gibt Koordinate angepaßt an Parent, als ob Event von Parent ausgelöst worden wäre (ungleich Event.x-Wert von auslösendem Child). RawX identisch zum Child
+View.left -> Abstand View-Start zum Parent-Start

@@ -92,7 +92,7 @@ RuntimeException -> byte-buddy-agent -> Mockito Version nicht höher als 2.22.0 
 io.mockk.MockKException: Failed matching mocking signature for  ->  gemockte Klasse muß 'open' modifier haben
 
 
-Ok-Button im Softkeyboard: xml-Attribut imeOptions auf actionDone + inputType=text muß gesetzt sein
+Ok-Button im Softkeyboard: xml-Attribut imeOptions auf actionDone + inputType=text muß gesetzt sein (bei TextInputLayout setzen beim TextInputEditText-Element)
 
 
 Wildcard-Imports -> Editor - CodeStyle - <language> - Imports

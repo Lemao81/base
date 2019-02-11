@@ -1,0 +1,6 @@
+import buildSrc.*
+
+apply from: Path.baseAndroidLibrary
+
+dependencies {
+}

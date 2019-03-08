@@ -4,12 +4,12 @@ object Version {
     // plugins
     const val customPlugins = "1.0.4"
     const val gmsPlugin = "4.1.0"
-    const val androidGradlePlugin = "3.2.1"
+    const val androidGradlePlugin = "3.3.1"
     const val fabricPlugin = "1.24.4"
     const val hugoPlugin = "1.2.1"
 
     // utils
-    const val andutils = "1.0.98"
+    const val andutils = "1.0.99"
     const val jutils = "1.0.24"
     const val firebaseutils = "1.0.6"
     const val resutils = "1.0.7"
@@ -24,7 +24,7 @@ object Version {
     // libs
     const val java7 = "1.7"
     const val java8 = "1.8"
-    const val kotlin = "1.3.0"
+    const val kotlin = "1.3.21"
     const val androidxCore = "1.0.0"
     const val androidxCoreKtx = "1.0.1"
     const val androidxAppcompat = "1.0.0"
@@ -237,6 +237,7 @@ object Lib {
     const val ktlint = "com.github.shyiko:ktlint:${Version.ktlint}"
     const val autoDsl = "com.juanchosaravia.autodsl:annotation:${Version.autoDsl}"
     const val autoDslProcessor = "com.juanchosaravia.autodsl:processor:${Version.autoDsl}"
+    const val log4k = "com.log4k:log4k:${Version.log4k}"
     const val log4kAndroid = "com.log4k:log4k-android:${Version.log4k}"
     const val okhttp = "com.squareup.okhttp3:okhttp:${Version.okhttp}"
 

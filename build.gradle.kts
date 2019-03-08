@@ -7,7 +7,8 @@ val deployProjects = listOf(
     "AndroidUtils",
     "CustomViews",
     "StackDownloader",
-    "MovieReleases"
+    "MovieReleases",
+    "BabyLock"
 )
 
 tasks.create<Copy>("deployDependencies") {

@@ -1,10 +1,4 @@
-import buildSrc.PluginId
-import buildSrc.Path
-import buildSrc.App
-import buildSrc.Const
-import buildSrc.Dimension
-import buildSrc.Version
-import buildSrc.Lib
+import buildSrc.*
 
 apply plugin: PluginId.androidApplication
 apply plugin: PluginId.kotlinAndroid

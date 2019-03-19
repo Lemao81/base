@@ -1,16 +1,14 @@
-import buildSrc.*
-
-apply plugin: PluginId.androidLibrary
-apply plugin: PluginId.kotlinAndroid
+apply plugin: PluginIds.androidLibrary
+apply plugin: PluginIds.kotlinAndroid
 
 android {
-    compileSdkVersion App.compileSdkVersion
+    compileSdkVersion Android.compileSdkVersion
 
     defaultConfig {
-        minSdkVersion App.minSdkVersion
-        targetSdkVersion App.targetSdkVersion
         versionCode App.versionCode
         versionName App.versionName
+        minSdkVersion Android.minSdkVersion
+        targetSdkVersion Android.targetSdkVersion
 
         multiDexEnabled true
         testInstrumentationRunner Const.androidTestRunner
@@ -27,11 +25,11 @@ android {
     packagingOptions { pickFirst 'protobuf.meta' }
 
     compileOptions {
-        sourceCompatibility = Version.java8
-        targetCompatibility = Version.java8
+        sourceCompatibility = Versions.java8
+        targetCompatibility = Versions.java8
     }
 }
 
 dependencies {
-    implementation Lib.kotlinStd8
+    implementation Libs.kotlinStd8
 }

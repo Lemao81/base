@@ -1,6 +1,5 @@
 val deployProjectPath = "buildSrc\\src\\main\\java"
-val deployFileName = "Dependencies.kt"
-
+val deployFileNames = arrayOf("Dependencies.kt", "Constants.kt")
 val deployProjects = listOf(
     "base",
     "ProjectX",
@@ -11,20 +10,23 @@ val deployProjects = listOf(
     "BabyLock"
 )
 
-tasks.create<Copy>("deployDependencies") {
-    description = "Copies buildSrc/Dependencies.kt to android projects"
+tasks.create("deployDependencies") {
+    description = "Copies Dependencies.kt + Constants.kt to android projects"
     group = "Deploy"
 
-    val fromPath = "$projectDir\\buildSource\\$deployFileName"
-    println(fromPath)
+    doLast {
+        println("Task ${this.name} started")
+        deployProjects.forEach { project ->
+            deployFileNames.forEach { fileName ->
+                copy {
+                    val fromPath = "$projectDir\\buildSource\\$fileName"
+                    val toPath = "$projectDir\\..\\$project\\$deployProjectPath"
 
-    deployProjects.forEach { project ->
-        copy {
-            val toPath = "$projectDir\\..\\" + project + File.separator + deployProjectPath
-            println(toPath)
-
-            from(file(fromPath))
-            into(file(toPath))
+                    from(file(fromPath))
+                    into(file(toPath))
+                    println("Copied $fileName to $toPath")
+                }
+            }
         }
     }
 }

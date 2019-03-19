@@ -1,12 +1,10 @@
-import buildSrc.*
-
 ext {
     configureBaseRepositories = { project ->
         project.repositories {
             google()
             jcenter()
-            maven { url Url.mavenLocalInternal }
-            maven { url Url.maven }
+            maven { url Urls.mavenLocalInternal }
+            maven { url Urls.maven }
         }
     }
 
@@ -19,10 +17,10 @@ ext {
 
     ignoreRelease = { project ->
         project.afterEvaluate {
-            def android = it.extensions.findByName(Extension.android)
+            def android = it.extensions.findByName(Extensions.android)
             if (android != null) {
                 android.variantFilter { variant ->
-                    if (variant.buildType.name == BuildType.release)
+                    if (variant.buildType.name == BuildTypes.release)
                         variant.setIgnore(true)
                 }
             }
@@ -31,10 +29,10 @@ ext {
 
     ignoreDevRelease = { project ->
         project.afterEvaluate {
-            def android = it.extensions.findByName(Extension.android)
+            def android = it.extensions.findByName(Extensions.android)
             if (android != null) {
                 android.variantFilter { variant ->
-                    if (variant.buildType.name == BuildType.release && variant.getFlavors().get(0).name == Flavor.dev)
+                    if (variant.buildType.name == BuildTypes.release && variant.getFlavors().get(0).name == Flavors.dev)
                         variant.setIgnore(true)
                 }
             }

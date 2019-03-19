@@ -1,5 +1,3 @@
-import buildSrc.*
-
 repositories {
     jcenter()
 }
@@ -9,7 +7,7 @@ configurations {
 }
 
 dependencies {
-    ktlint Lib.ktlint
+    ktlint Libs.ktlint
 }
 
 task ktlint(type: JavaExec, group: "verification") {

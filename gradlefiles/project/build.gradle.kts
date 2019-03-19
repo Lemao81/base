@@ -1,15 +1,14 @@
 import com.android.build.gradle.BaseExtension
-import buildSrc.*
 
 buildscript {
     repositories {
-        jcenter()
         google()
+        jcenter()
     }
 
     dependencies {
-        classpath(Plugin.androidGradle)
-        classpath(Plugin.kotlin)
+        classpath(Plugins.androidBuild)
+        classpath(Plugins.kotlin)
     }
 }
 
@@ -17,20 +16,23 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven(Url.mavenLocalInternal)
+        maven(Urls.mavenLocalInternal)
     }
 
     disableLintTasks(this)
 
     this.afterEvaluate {
-        val android = this.extensions.findByName(Extension.android) as? BaseExtension
+        val android = this.extensions.findByName(Extensions.android) as? BaseExtension
         android?.variantFilter {
-            if (this.buildType.name == BuildType.release)
+            if (this.buildType.name == BuildTypes.release) {
                 this.setIgnore(true)
+            }
         }
     }
+}
 
-    apply(from = "$rootDir/ktlint.gradle")
+subprojects {
+    apply(from = Paths.ktlint)
 }
 
 tasks.create<Delete>("clean") {

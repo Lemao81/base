@@ -1,2 +1,3 @@
-archiva { groupId = App.applicationId }
+apply plugin: PluginIds.maven
+
 uploadArchives { repositories { mavenDeployer() } }

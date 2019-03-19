@@ -1,6 +1,4 @@
-import buildSrc.*
-
-apply from: Path.baseProject
+apply from: Paths.baseProject
 
 buildscript {
     repositories {
@@ -9,8 +7,8 @@ buildscript {
     }
 
     dependencies {
-        classpath Plugin.androidGradle
-        classpath Plugin.kotlin
+        classpath Plugins.androidGradle
+        classpath Plugins.kotlin
     }
 }
 
@@ -21,5 +19,5 @@ allprojects {
 }
 
 subprojects {
-    apply from: Path.ktlint
+    apply from: Paths.ktlint
 }

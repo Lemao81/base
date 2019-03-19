@@ -98,11 +98,10 @@ Ok-Button im Softkeyboard: xml-Attribut imeOptions auf actionDone + inputType=te
 Wildcard-Imports -> Editor - CodeStyle - <language> - Imports
 
 Git remove folder from version control:
+git rm -r --cached <foldername>
 git rm -r <foldername>
-git commit -m "<commit message>"
-
-Git remove from version control cache:
-git rm -r --cached <path>
+git commit -m "Removed folder <foldername> from version control"
+Push
 
 
 MotionEvent.rawX -> absolute x-Koordinate bezogen auf das Display (Range 0 - Breite des Displays)

@@ -1,5 +1,3 @@
-import buildSrc.*
-
 apply plugin: PluginId.androidApplication
 apply plugin: PluginId.kotlinAndroid
 apply from: Path.baseKotlinAndroidExtension

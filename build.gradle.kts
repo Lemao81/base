@@ -19,7 +19,7 @@ tasks.create("deployDependencies") {
         deployProjects.forEach { project ->
             deployFileNames.forEach { fileName ->
                 copy {
-                    val fromPath = "$projectDir\\buildSrcDeployment\\$fileName"
+                    val fromPath = "$projectDir\\baseFiles\\buildSrcDeployment\\$fileName"
                     val toPath = "$projectDir\\..\\$project\\$deployProjectPath"
 
                     from(file(fromPath))

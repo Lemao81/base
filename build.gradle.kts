@@ -11,7 +11,7 @@ val deployProjects = listOf(
 )
 
 tasks.create("deployDependencies") {
-    description = "Copies Dependencies.kt + Constants.kt to android projects"
+    description = "Copies buildSrc constants-kt-files to android projects"
     group = "Deploy"
 
     doLast {
@@ -19,7 +19,7 @@ tasks.create("deployDependencies") {
         deployProjects.forEach { project ->
             deployFileNames.forEach { fileName ->
                 copy {
-                    val fromPath = "$projectDir\\buildSource\\$fileName"
+                    val fromPath = "$projectDir\\buildSrcDeployment\\$fileName"
                     val toPath = "$projectDir\\..\\$project\\$deployProjectPath"
 
                     from(file(fromPath))

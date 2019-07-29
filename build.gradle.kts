@@ -8,7 +8,8 @@ val deployProjects = listOf(
     "StackDownloader",
     "MovieReleases",
     "BabyLock",
-    "Gradleplugins"
+    "Gradleplugins",
+    "Share"
 )
 val additionalDeployPaths = listOf(
     "C:\\Users\\Jueggs\\IdeaProjects\\Gradleplugins\\buildSrc\\src\\main\\kotlin"

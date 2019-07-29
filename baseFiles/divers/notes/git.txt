@@ -1,0 +1,18 @@
+Repo in git anlegen:
+--------------------------------------------
+- Repository <projektname> bei github.com erstellen
+- gitignore erstellen '.gitignore' (gradle, intellij, android etc.)
+- git-bash/Android Studio Terminal zu Projekt navigieren
+git init
+git add .    ('git reset .'  zum rückgängig machen)
+git commit -m "init commit"
+git remote add origin https://github.com/Lemao81/<projektname>.git
+git remote -v
+git push -u origin master
+---------------------------------------------
+
+Repo von git clonen:
+--------------------------------------------
+- git bash zu Ordner navigieren, in dem der Projektordner erstellt werden soll
+git clone <repo url kopie>
+--------------------------------------------

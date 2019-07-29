@@ -12,32 +12,19 @@ No Tests found:
  - Constanten ev. nicht aufgelöst, ersetzen durch Werte
 
 
-buildSrc:
- - buildSrc folder -> inside file 'build.gradle.kts' -> inside file
-plugins {
-    `kotlin-dsl`
-}
- - folder src - main - java
- - insice java Dependencies.kt
+buildSrc Ordner hinzufügen:
+--------------------------------------------
+- buildSrc Ordner auf oberster Ebene erstellen
+- innerhalb buildSrc Ordner Datei 'build.gradle.kts' (base files) erstellen
+- innerhalb buildSrc Ordner Ordnerstruktur  src - main - java erstellen
+- Projekt zu base-file-deployment zufügen
+--------------------------------------------
 
 
 Image as Drawable:
   - add Image Asset -> Action Bar and Tab Icons
 
 compile fileTree(dir: 'libs', include: ['*.jar'])
-
-
-Repo in git anlegen -> git bash zu Projekt navigieren
-git init
-gitignore erstellen '.gitignore' (gradle, intellij, android etc.)
-git add .    ('git reset .'  zum rückgängig machen)
-git commit -m "init commit"
-git remote add origin https://github.com/Lemao81/GradlePlugins.git
-git remote -v
-git push -u origin master
-
-Repo von git clonen -> git bash zu Ordner navigieren, in dem der Projektordner erstellt werden soll
-git clone <repo url kopie>
 
 
 gradlew build > myLogs.txt 2> logErrors.txt

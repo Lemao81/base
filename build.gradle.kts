@@ -7,7 +7,11 @@ val deployProjects = listOf(
     "CustomViews",
     "StackDownloader",
     "MovieReleases",
-    "BabyLock"
+    "BabyLock",
+    "Gradleplugins"
+)
+val additionalDeployPaths = listOf(
+    "C:\\Users\\Jueggs\\IdeaProjects\\Gradleplugins\\buildSrc\\src\\main\\kotlin"
 )
 
 tasks.create("deployDependencies") {
@@ -25,6 +29,17 @@ tasks.create("deployDependencies") {
                     from(file(fromPath))
                     into(file(toPath))
                     println("Copied $fileName to $toPath")
+                }
+            }
+        }
+        additionalDeployPaths.forEach { additionalDeployPath ->
+            deployFileNames.forEach { fileName ->
+                copy {
+                    val fromPath = "$projectDir\\baseFiles\\buildSrcDeployment\\$fileName"
+
+                    from(file(fromPath))
+                    into(file(additionalDeployPath))
+                    println("Copied $fileName to $additionalDeployPath")
                 }
             }
         }

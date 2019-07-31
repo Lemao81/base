@@ -1,5 +1,5 @@
 val deployProjectPath = "buildSrc\\src\\main\\java"
-val deployFileNames = arrayOf("Dependencies.kt", "Constants.kt")
+val deployFileNames = arrayOf("Dependencies.kt", "Constants.kt", "Global.kt")
 val deployProjects = listOf(
     "base",
     "ProjectX",
@@ -9,7 +9,8 @@ val deployProjects = listOf(
     "MovieReleases",
     "BabyLock",
     "Gradleplugins",
-    "Share"
+    "Share",
+    "VocabularyTrainer"
 )
 val additionalDeployPaths = listOf(
     "C:\\Users\\Jueggs\\IdeaProjects\\Gradleplugins\\buildSrc\\src\\main\\kotlin"

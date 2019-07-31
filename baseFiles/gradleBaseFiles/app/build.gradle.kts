@@ -5,25 +5,10 @@ plugins {
 }
 
 android {
-    defaultConfig {
-        applicationId = App.applicationId
-        versionCode = App.versionCode
-        versionName = App.versionName
-        compileSdkVersion(Android.compileSdkVersion)
-        targetSdkVersion(Android.targetSdkVersion)
-        minSdkVersion(Android.minSdkVersion)
-
-        javaCompileOptions { annotationProcessorOptions.includeCompileClasspath = true }
-        multiDexEnabled = true
-        testInstrumentationRunner = Const.androidTestRunner
-    }
-
-    buildTypes {
-        getByName(BuildTypes.release) {
-            isMinifyEnabled = true
-            proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
-        }
-    }
+    configureAndroidExtension(this)
+    defaultConfig.applicationId = App.applicationId
+    minifyRelease(this)
+    optimizeBuildTime(project, this)
 
     flavorDimensions(Dimensions.main)
     productFlavors {
@@ -35,23 +20,10 @@ android {
             applicationIdSuffix = ".prod"
         }
     }
-
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-
-    dexOptions {
-        preDexLibraries = true
-    }
-
-    if (project.hasProperty("devBuild")) {
-        splits.abi.isEnable = false
-        splits.density.isEnable = false
-        aaptOptions.cruncherEnabled = false
-    }
 }
 
 dependencies {
     implementation(Libs.kotlinStd8)
+    implementation(Libs.androidxAppcompat)
+    implementation(Libs.androidxConstraintLayout)
 }

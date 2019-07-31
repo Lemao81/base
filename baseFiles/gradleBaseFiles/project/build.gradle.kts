@@ -1,9 +1,8 @@
-import com.android.build.gradle.BaseExtension
-
 buildscript {
     repositories {
         google()
         jcenter()
+        maven(Urls.mavenLocalInternal)
     }
 
     dependencies {
@@ -20,15 +19,7 @@ allprojects {
     }
 
     disableLintTasks(this)
-
-    this.afterEvaluate {
-        val android = this.extensions.findByName(Extensions.android) as? BaseExtension
-        android?.variantFilter {
-            if (this.buildType.name == BuildTypes.release) {
-                this.setIgnore(true)
-            }
-        }
-    }
+    ignoreReleaseBuild(this)
 }
 
 subprojects {

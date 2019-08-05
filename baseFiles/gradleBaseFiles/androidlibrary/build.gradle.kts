@@ -6,13 +6,7 @@ plugins {
 
 android {
     configureAndroidExtension(this)
-
-    buildTypes {
-        getByName(BuildTypes.release) {
-            isMinifyEnabled = true
-            proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
-        }
-    }
+    minifyRelease(this)
 }
 
 dependencies {

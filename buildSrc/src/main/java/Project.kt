@@ -2,6 +2,8 @@ object App {
     const val applicationId = ""
     const val versionCode = 1
     const val versionName = "1.0"
+    const val prodName = ""
+    const val devName = ""
 }
 
 object Android {

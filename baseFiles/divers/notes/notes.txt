@@ -13,12 +13,12 @@ No Tests found:
 
 
 buildSrc Ordner hinzufügen:
---------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 - buildSrc Ordner auf oberster Ebene erstellen
 - innerhalb buildSrc Ordner Datei 'build.gradle.kts' (base files) erstellen
 - innerhalb buildSrc Ordner Ordnerstruktur  src - main - java erstellen
 - Projekt zu base-file-deployment zufügen
---------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 
 
 Image as Drawable:
@@ -95,3 +95,14 @@ MotionEvent.rawX -> absolute x-Koordinate bezogen auf das Display (Range 0 - Bre
 MotionEvent.x -> x-Koordinate relativ zu der View, die Touchevent ausgelöst hat / Listener deklariert hat (Range von 0 = linker Rand View bis Displaybreite - View-Absolut-StartX)
 onInterceptTouchEvent -> MotionEvent.x gibt Koordinate angepaßt an Parent, als ob Event von Parent ausgelöst worden wäre (ungleich Event.x-Wert von auslösendem Child). RawX identisch zum Child
 View.left -> Abstand View-Start zum Parent-Start
+
+
+Cannot inline bytecode built with JVM target 1.8...  ->  in project gradle file für allProjects die Methode configureKotlinCompileTasks(this) aufrufen (setzt
+kotlinOptions.jvmTarget auf 1.8)
+
+
+kryptische Zeichen bei Öffnen der Files nach Systemabsturz:
+------------------------------------------------------------------------------------------------------------------------------------
+Aktuelle Änderungen einchecken, Projekt(e) löschen (bzw. verschieben als Backup) und von git neu klonen,
+in Android Studio neu als Gradle Projekt importieren
+------------------------------------------------------------------------------------------------------------------------------------

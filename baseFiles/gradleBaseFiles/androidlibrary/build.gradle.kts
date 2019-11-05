@@ -5,8 +5,8 @@ plugins {
 }
 
 android {
-    configureAndroidLibraryExtension(this)
-    minifyRelease(this)
+    configureAndroidLibraryExtension()
+    minifyRelease()
 }
 
 dependencies {

@@ -5,13 +5,14 @@ plugins {
 }
 
 android {
-    configureAndroidAppExtension(this)
-    minifyRelease(this)
-    optimizeBuildTime(project, this)
+    configureAndroidAppExtension()
+    minifyRelease()
+    optimizeBuildTime(project)
 }
 
 dependencies {
     implementation(Libs.kotlinStd8)
     implementation(Libs.androidxAppcompat)
     implementation(Libs.androidxConstraintLayout)
+    implementation(Libs.ankoCommons)
 }

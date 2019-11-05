@@ -7,9 +7,9 @@ object Versions {
     const val hugoPlugin = "1.2.1"
 
     // utils
-    const val andutils = "1.0.138"
+    const val andutils = "1.0.145"
     const val andtestutils = "1.0.11"
-    const val jutils = "1.0.35"
+    const val jutils = "1.0.36"
     const val jtestutils = "1.0.0"
     const val firebaseutils = "1.0.10"
     const val resutils = "1.0.9"
@@ -29,6 +29,7 @@ object Versions {
     const val androidxCore = "1.0.0"
     const val androidxCoreKtx = "1.0.1"
     const val androidxAppcompat = "1.1.0-rc01"
+    const val androidxActivityKtx = "1.1.0-rc01"
     const val androidxAnnotation = "1.0.0"
     const val androidxConstraintLayout = "1.1.2"
     const val androidxGridLayout = "1.0.0"
@@ -120,6 +121,7 @@ object Versions {
     const val jacksonKotlin = "2.9.7"
     const val androidJUnit5Plugin = "1.5.1.0"
     const val workManager = "2.2.0"
+    const val clansFabMenu = "1.6.4"
 }
 
 object Libs {
@@ -147,6 +149,7 @@ object Libs {
     const val androidxCore = "androidx.core:core:${Versions.androidxCore}"
     const val androidxCoreKtx = "androidx.core:core-ktx:${Versions.androidxCoreKtx}"
     const val androidxAppcompat = "androidx.appcompat:appcompat:${Versions.androidxAppcompat}"
+    const val androidxActivityKtx = "androidx.activity:activity-ktx:${Versions.androidxActivityKtx}"
     const val androidxAnnotation = "androidx.annotation:annotation:${Versions.androidxAnnotation}"
     const val androidxConstraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.androidxConstraintLayout}"
     const val androidxGridLayout = "androidx.gridlayout:gridlayout:${Versions.androidxGridLayout}"
@@ -265,6 +268,7 @@ object Libs {
     const val okhttp = "com.squareup.okhttp3:okhttp:${Versions.okhttp}"
     const val blurry = "jp.wasabeef:blurry:${Versions.blurry}"
     const val jacksonKotlin = "com.fasterxml.jackson.module:jackson-module-kotlin:${Versions.jacksonKotlin}"
+    const val clansFabMenu = "com.github.clans:fab:${Versions.clansFabMenu}"
 
     // testing
     const val jUnit4 = "junit:junit:${Versions.jUnit4}"
